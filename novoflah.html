@@ -20,8 +20,10 @@
 <!-- Navbar -->
 <nav class="w3-top">
  <ul class="w3-navbar w3-theme-d2 w3-left-align w3-large">
- 
-  <li><a href="#" class="w3-black"><i class="fa fa-home w3-margin-right w3-text-orange"></i>INICIO</a></li>
+  <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+    <a class="w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  </li>
+  <li><a href="novo flah.html" class="w3-black"><i class="fa fa-home w3-margin-right w3-text-blue"></i>INICIO</a></li>
   <li class="w3-hide-small"><a href="imagens.html" class="w3-hover-white">IMAGENS</a></li>
   <li class="w3-hide-small"><a href="contato.html" class="w3-hover-white">CONTATO</a></li>
   <li class="w3-hide-small w3-dropdown-hover">
@@ -30,19 +32,18 @@
       <a href="local.html">LOCALIZAÇÃO</a>
     </div>
   </li>
-
  </ul>
 </nav>
 
 <!-- Navbar on small screens -->
-<div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:43px;">
+<nav id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:43px;">
   <ul class="w3-navbar w3-left-align w3-large w3-theme">
     <li><a href="imagens.html">imagens</a></li>
     <li><a href="contato.html">contato</a></li>
     <li><a href="local.html">localização</a></li>
-	<li><a href="#">Desenvolvedores</a></li>
   </ul>
-</div>
+</nav>
+
 
 <header class="w3-display-container w3-animate-opacity">
   <img class="testimg" src="imagens/H+header escuro.png" alt="boat" style="width:100%;min-height:350px;max-height:800px;">
@@ -112,7 +113,7 @@
   <ul class="w3-pagination w3-white w3-border-bottom" style="width:100%;">
    <li><a href="#" class="tablink" onclick="openCity(event, 'London')">Noticia</a></li>
    <li><a href="#" class="tablink" onclick="openCity(event, 'Paris')">Imagens</a></li>
-   <li><a href="#" class="tablink" onclick="openCity(event, 'Tokyo')">Comentarios</a></li>
+   <li><a href="#" class="tablink" onclick="openCity(event, 'Tokyo')">Mais</a></li>
   </ul>
 
   <div id="London" class="w3-container city">
@@ -186,7 +187,7 @@
   </div>
 
   <div id="Tokyo" class="w3-container city">
-   <h1>Comente!</h1>
+   <h1>Não se esqueça de dar uma olhada na nossa <a href="imagens.html" class="w3-hover-white">Galeria de Imagens!</a></h1>
    
   </div>
 
@@ -210,7 +211,7 @@
   <ul class="w3-pagination w3-white w3-border-bottom" style="width:100%;">
    <li><a href="#" class="tablink" onclick="openCity2(event, 'London2')">Noticia</a></li>
    <li><a href="#" class="tablink" onclick="openCity2(event, 'Paris2')">Imagens</a></li>
-   <li><a href="#" class="tablink" onclick="openCity2(event, 'Tokyo2')">Comentarios</a></li>
+   <li><a href="#" class="tablink" onclick="openCity2(event, 'Tokyo2')">Mais</a></li>
   </ul>
 
   <div id="London2" class="w3-container city2">
@@ -283,7 +284,7 @@ O episódio vai ao ar originalmente pela CW (canal americano) dia 25 de Maio, ma
   </div>
 
   <div id="Tokyo2" class="w3-container city2">
-   <h1>Comente!</h1>
+   <h1>Não se esqueça de dar uma olhada na nossa <a href="imagens.html" class="w3-hover-white">Galeria de Imagens!</a></h1>
    
   </div>
 
@@ -303,7 +304,7 @@ O episódio vai ao ar originalmente pela CW (canal americano) dia 25 de Maio, ma
   <ul class="w3-pagination w3-white w3-border-bottom" style="width:100%;">
    <li><a href="#" class="tablink" onclick="openCity3(event, 'London3')">Noticia</a></li>
    <li><a href="#" class="tablink" onclick="openCity3(event, 'Paris3')">Imagens</a></li>
-   <li><a href="#" class="tablink" onclick="openCity3(event, 'Tokyo3')">Comentarios</a></li>
+   <li><a href="#" class="tablink" onclick="openCity3(event, 'Tokyo3')">Mais</a></li>
   </ul>
 
   <div id="London3" class="w3-container city3">
@@ -371,7 +372,7 @@ O episódio vai ao ar originalmente pela CW (canal americano) dia 25 de Maio, ma
   </div>
 
   <div id="Tokyo3" class="w3-container city3">
-   <h1>Comente!</h1>
+   <h1>Não se esqueça de dar uma olhada na nossa <a href="imagens.html" class="w3-hover-white">Galeria de Imagens!</a></h1>
    
   </div>
  
@@ -390,7 +391,7 @@ O episódio vai ao ar originalmente pela CW (canal americano) dia 25 de Maio, ma
   <ul class="w3-pagination w3-white w3-border-bottom" style="width:100%;">
    <li><a href="#" class="tablink" onclick="openCity4(event, 'London4')">Noticia</a></li>
    <li><a href="#" class="tablink" onclick="openCity4(event, 'Paris4')">Imagens</a></li>
-   <li><a href="#" class="tablink" onclick="openCity4(event, 'Tokyo4')">Comentarios</a></li>
+   <li><a href="#" class="tablink" onclick="openCity4(event, 'Tokyo4')">Mais</a></li>
   </ul>
 
   <div id="London4" class="w3-container city4">
@@ -463,7 +464,7 @@ O episódio vai ao ar originalmente pela CW (canal americano) dia 25 de Maio, ma
   </div>
 
   <div id="Tokyo4" class="w3-container city"4>
-   <h1>Comente!</h1>
+   <h1>Não se esqueça de dar uma olhada na nossa <a href="imagens.html" class="w3-hover-white">Galeria de Imagens!</a></h1>
    
   </div>
 
@@ -482,7 +483,7 @@ O episódio vai ao ar originalmente pela CW (canal americano) dia 25 de Maio, ma
   <ul class="w3-pagination w3-white w3-border-bottom" style="width:100%;">
    <li><a href="#" class="tablink" onclick="openCity5(event, 'London5')">Noticia</a></li>
    <li><a href="#" class="tablink" onclick="openCity5(event, 'Paris5')">Imagens</a></li>
-   <li><a href="#" class="tablink" onclick="openCity5(event, 'Tokyo5')">Comentarios</a></li>
+   <li><a href="#" class="tablink" onclick="openCity5(event, 'Tokyo5')">Mais</a></li>
   </ul>
 
   <div id="London5" class="w3-container city5">
@@ -552,7 +553,7 @@ O episódio vai ao ar originalmente pela CW (canal americano) dia 25 de Maio, ma
   </div>
 
   <div id="Tokyo5" class="w3-container city5">
-   <h1>Comente!</h1>
+   <h1>Não se esqueça de dar uma olhada na nossa <a href="imagens.html" class="w3-hover-white">Galeria de Imagens!</a></h1>
    
   </div>
  </div>
@@ -570,7 +571,7 @@ O episódio vai ao ar originalmente pela CW (canal americano) dia 25 de Maio, ma
   <ul class="w3-pagination w3-white w3-border-bottom" style="width:100%;">
    <li><a href="#" class="tablink" onclick="openCity6(event, 'London6')">Noticia</a></li>
    <li><a href="#" class="tablink" onclick="openCity6(event, 'Paris6')">Imagens</a></li>
-   <li><a href="#" class="tablink" onclick="openCity6(event, 'Tokyo6')">Comentarios</a></li>
+   <li><a href="#" class="tablink" onclick="openCity6(event, 'Tokyo6')">Mais</a></li>
   </ul>
 
   <div id="London6" class="w3-container city6">
@@ -651,7 +652,7 @@ O episódio vai ao ar originalmente pela CW (canal americano) dia 25 de Maio, ma
   </div>
 
   <div id="Tokyo6" class="w3-container city6">
-   <h1>Comente!</h1>
+   <h1>Não se esqueça de dar uma olhada na nossa <a href="imagens.html" class="w3-hover-white">Galeria de Imagens!</a></h1>
  
   </div>
  </article>
